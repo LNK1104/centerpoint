@@ -1,0 +1,1748 @@
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Mon Apr 28 09:08:22 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Mon Apr 28 09:09:09 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file test.lp
+Reading time = 0.00 seconds
+: 2 rows, 3 columns, 5 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0x4d819f46
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  QMatrix range    [1e+00, 3e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e+00, 5e+00]
+  RHS range        [1e+00, 1e+01]
+  QRHS range       [5e+00, 5e+00]
+Presolve removed 2 rows and 3 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 11 available processors)
+
+Solution count 1: 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Mon Apr 28 09:12:05 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file error_qcp.lp
+Reading time = 0.00 seconds
+: 4 rows, 7 columns, 12 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 4 rows, 7 columns and 12 nonzeros
+Model fingerprint: 0x51d6a11f
+Model has 4 quadratic objective terms
+Model has 5 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e+22, 3e+23]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [1e+00, 6e+00]
+  Objective range  [2e+01, 2e+01]
+  QObjective range [3e+01, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 49 rows, 20 columns, 136 nonzeros
+Presolved model has 13 bilinear constraint(s)
+Variable types: 20 continuous, 0 integer (0 binary)
+Warning: Markowitz tolerance tightened to 0.25
+Warning: Markowitz tolerance tightened to 0.5
+
+Root relaxation: objective 2.298877e+00, 22 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.29888    0   13          -    2.29888      -     -    0s
+     0     0    4.84918    0    6          -    4.84918      -     -    0s
+     0     0    8.96552    0   12          -    8.96552      -     -    0s
+     0     0    9.98363    0   12          -    9.98363      -     -    0s
+     0     0   11.53751    0   13          -   11.53751      -     -    0s
+     0     0   11.56896    0   13          -   11.56896      -     -    0s
+     0     0   12.81940    0   12          -   12.81940      -     -    0s
+     0     0   13.02354    0   12          -   13.02354      -     -    0s
+     0     0   14.00210    0   13          -   14.00210      -     -    0s
+     0     0   14.12569    0   12          -   14.12569      -     -    0s
+     0     0   14.16061    0   11          -   14.16061      -     -    0s
+     0     0   14.24583    0   11          -   14.24583      -     -    0s
+     0     2   14.24583    0   11          -   14.24583      -     -    0s
+
+Cutting planes:
+  RLT: 7
+  PSD: 1
+
+Explored 78 nodes (779 simplex iterations) in 0.03 seconds (0.01 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Mon Apr 28 09:15:15 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file error_qcp.lp
+Reading time = 0.00 seconds
+: 4 rows, 7 columns, 12 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 4 rows, 7 columns and 12 nonzeros
+Model fingerprint: 0x79674745
+Model has 4 quadratic objective terms
+Model has 5 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e+22, 3e+23]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [1e+00, 6e+00]
+  Objective range  [2e+01, 2e+01]
+  QObjective range [3e+01, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 49 rows, 20 columns, 136 nonzeros
+Presolved model has 13 bilinear constraint(s)
+Variable types: 20 continuous, 0 integer (0 binary)
+Warning: Markowitz tolerance tightened to 0.5
+
+Root relaxation: objective 2.298922e+00, 23 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.29892    0   13          -    2.29892      -     -    0s
+     0     0    4.84915    0    6          -    4.84915      -     -    0s
+     0     0    8.96510    0   12          -    8.96510      -     -    0s
+     0     0    9.98336    0   12          -    9.98336      -     -    0s
+     0     0   11.53757    0   13          -   11.53757      -     -    0s
+     0     0   11.56890    0   13          -   11.56890      -     -    0s
+     0     0   12.81790    0   12          -   12.81790      -     -    0s
+     0     0   13.02264    0   12          -   13.02264      -     -    0s
+     0     0   13.02264    0   12          -   13.02264      -     -    0s
+     0     0   13.02264    0   12          -   13.02264      -     -    0s
+     0     0   13.02264    0   12          -   13.02264      -     -    0s
+     0     0   13.02264    0   12          -   13.02264      -     -    0s
+     0     0   13.02264    0   12          -   13.02264      -     -    0s
+     0     0   13.02264    0   12          -   13.02264      -     -    0s
+H    0     0                      21.6863847   13.02264  40.0%     -    0s
+     0     2   13.02264    0   12   21.68638   13.02264  40.0%     -    0s
+H   76    59                      20.3407021   13.02264  36.0%  14.1    0s
+*  323   187              20      20.1976279   13.02264  35.5%   9.6    0s
+*  356   187              17      19.9886142   13.02264  34.8%   9.1    0s
+*  411   222              27      18.4841502   13.02264  29.5%   8.5    0s
+*  551   269              33      17.5974962   13.02264  26.0%   7.7    0s
+*  823   352              41      17.5072110   13.49072  22.9%   8.0    0s
+*  978   374              38      17.3567449   14.06058  19.0%   7.8    0s
+*  984   374              38      17.3566401   14.06058  19.0%   7.7    0s
+* 1421   379              38      17.3558489   15.47025  10.9%   7.8    0s
+* 1530   379              28      17.3524780   15.95855  8.03%   7.8    0s
+* 1819   334              30      17.3524265   15.95855  8.03%   7.7    0s
+* 2652   323              41      17.3518256   17.19721  0.89%   7.4    0s
+* 2977   299              44      17.3516708   17.29901  0.30%   7.3    0s
+* 2990   299              42      17.3516352   17.29901  0.30%   7.3    0s
+* 3285   299              45      17.3516345   17.30748  0.25%   7.1    0s
+* 3286   299              45      17.3516325   17.30748  0.25%   7.1    0s
+* 3498   285              45      17.3515637   17.33484  0.10%   7.0    0s
+* 3500   285              46      17.3515606   17.33484  0.10%   7.0    0s
+* 3526   285              49      17.3515584   17.33484  0.10%   7.0    0s
+* 3528   285              48      17.3515544   17.33484  0.10%   7.0    0s
+* 4094   285              47      17.3515539   17.34594  0.03%   6.7    0s
+* 4177   310              48      17.3515517   17.34861  0.02%   6.7    0s
+* 4278   310              47      17.3515515   17.34861  0.02%   6.7    0s
+* 4285   310              51      17.3515513   17.34861  0.02%   6.7    0s
+* 4347   310              52      17.3515477   17.34861  0.02%   6.7    0s
+* 4558   310              47      17.3515402   17.34873  0.02%   6.6    0s
+
+Cutting planes:
+  RLT: 3
+
+Explored 4970 nodes (32503 simplex iterations) in 0.09 seconds (0.07 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 10: 17.3515 17.3515 17.3516 ... 17.3516
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.735154033680e+01, best bound 1.735069125230e+01, gap 0.0049%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Mon Apr 28 13:41:00 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file error_qcp.lp
+Reading time = 0.00 seconds
+: 4 rows, 7 columns, 12 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 4 rows, 7 columns and 12 nonzeros
+Model fingerprint: 0xbb040554
+Model has 2 quadratic objective terms
+Model has 5 quadratic constraints
+Coefficient statistics:
+  Matrix range     [3e+16, 6e+16]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [4e+00, 6e+00]
+  Objective range  [6e+01, 1e+02]
+  QObjective range [1e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 35 rows, 14 columns, 105 nonzeros
+Presolved model has 9 bilinear constraint(s)
+Variable types: 14 continuous, 0 integer (0 binary)
+
+Root relaxation: objective 0.000000e+00, 4 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    1          -    0.00000      -     -    0s
+     0     0    0.00000    0    2          -    0.00000      -     -    0s
+     0     2    0.00000    0    2          -    0.00000      -     -    0s
+
+Explored 7 nodes (40 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Mon Apr 28 13:41:32 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file error_qcp.lp
+Reading time = 0.00 seconds
+: 4 rows, 7 columns, 12 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 4 rows, 7 columns and 12 nonzeros
+Model fingerprint: 0xbb040554
+Model has 2 quadratic objective terms
+Model has 5 quadratic constraints
+Coefficient statistics:
+  Matrix range     [3e+16, 6e+16]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [4e+00, 6e+00]
+  Objective range  [6e+01, 1e+02]
+  QObjective range [1e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 35 rows, 14 columns, 105 nonzeros
+Presolved model has 9 bilinear constraint(s)
+Variable types: 14 continuous, 0 integer (0 binary)
+
+Root relaxation: objective 0.000000e+00, 4 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    1          -    0.00000      -     -    0s
+     0     0    0.00000    0    2          -    0.00000      -     -    0s
+     0     2    0.00000    0    2          -    0.00000      -     -    0s
+
+Explored 7 nodes (40 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Mon Apr 28 13:42:49 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file error_qcp.lp
+Reading time = 0.00 seconds
+: 4 rows, 7 columns, 12 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 4 rows, 7 columns and 12 nonzeros
+Model fingerprint: 0xe2fc976f
+Model has 2 quadratic objective terms
+Model has 5 quadratic constraints
+Coefficient statistics:
+  Matrix range     [3e+16, 6e+16]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [4e+00, 6e+00]
+  Objective range  [6e+01, 1e+02]
+  QObjective range [1e+02, 2e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 35 rows, 14 columns, 105 nonzeros
+Presolved model has 9 bilinear constraint(s)
+Variable types: 14 continuous, 0 integer (0 binary)
+
+Root relaxation: objective 0.000000e+00, 4 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    1          -    0.00000      -     -    0s
+     0     0    0.00000    0    2          -    0.00000      -     -    0s
+     0     2    0.00000    0    2          -    0.00000      -     -    0s
+*    6     0               2     500.0000000  500.00000  0.00%  18.3    0s
+
+Explored 7 nodes (114 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 1: 500 
+
+Optimal solution found (tolerance 1.00e-04)
+Warning: max constraint violation (3.5525e+00) exceeds tolerance
+         (possibly due to large matrix coefficients)
+Best objective 5.000000000000e+02, best bound 5.000000000000e+02, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Wed May  7 18:10:20 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file error_qcp.lp
+Reading time = 0.00 seconds
+: 3 rows, 6 columns, 9 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 6 columns and 9 nonzeros
+Model fingerprint: 0x1c219c0a
+Model has 3 quadratic objective terms
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+16, 4e+17]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [5e-01, 5e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [2e+01, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 46 rows, 18 columns, 134 nonzeros
+Presolved model has 12 bilinear constraint(s)
+Variable types: 18 continuous, 0 integer (0 binary)
+
+Root relaxation: objective 0.000000e+00, 12 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   11          -    0.00000      -     -    0s
+     0     0    0.00000    0    4          -    0.00000      -     -    0s
+     0     0    0.00000    0    7          -    0.00000      -     -    0s
+     0     0    0.00000    0    7          -    0.00000      -     -    0s
+     0     0    0.00000    0   10          -    0.00000      -     -    0s
+     0     0    0.00000    0    3          -    0.00000      -     -    0s
+     0     2    0.00000    0    3          -    0.00000      -     -    0s
+
+Cutting planes:
+  RLT: 2
+  BQP: 1
+
+Explored 3 nodes (57 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Wed May  7 18:12:39 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file error_qcp.lp
+Reading time = 0.00 seconds
+: 3 rows, 6 columns, 9 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 6 columns and 9 nonzeros
+Model fingerprint: 0xf6dfe321
+Model has 3 quadratic objective terms
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+16, 4e+17]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [5e-01, 5e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [2e+01, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 46 rows, 18 columns, 134 nonzeros
+Presolved model has 12 bilinear constraint(s)
+Variable types: 18 continuous, 0 integer (0 binary)
+
+Root relaxation: objective 0.000000e+00, 10 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   10          -    0.00000      -     -    0s
+     0     0    0.00000    0    2          -    0.00000      -     -    0s
+     0     0    0.00000    0    2          -    0.00000      -     -    0s
+H    0     0                      83.3315583    0.00000   100%     -    0s
+     0     2    0.00000    0    2   83.33156    0.00000   100%     -    0s
+
+Cutting planes:
+  RLT: 2
+  BQP: 1
+
+Explored 5 nodes (48 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 1: 83.3316 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.333155825935e+01, best bound 8.333155825514e+01, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Wed May  7 18:41:47 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file error_qcp.lp
+Reading time = 0.00 seconds
+: 3 rows, 6 columns, 9 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 6 columns and 9 nonzeros
+Model fingerprint: 0x60a9288d
+Model has 3 quadratic objective terms
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [1e+16, 3e+17]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [5e-01, 5e+00]
+  Objective range  [0e+00, 0e+00]
+  QObjective range [2e+01, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 46 rows, 18 columns, 134 nonzeros
+Presolved model has 12 bilinear constraint(s)
+Variable types: 18 continuous, 0 integer (0 binary)
+
+Root relaxation: objective 0.000000e+00, 10 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0   10          -    0.00000      -     -    0s
+     0     0    0.00000    0   10          -    0.00000      -     -    0s
+     0     0    0.00000    0    9          -    0.00000      -     -    0s
+     0     0    0.00000    0    9          -    0.00000      -     -    0s
+     0     0    0.00000    0    4          -    0.00000      -     -    0s
+     0     0    0.00000    0    2          -    0.00000      -     -    0s
+     0     2    0.00000    0    2          -    0.00000      -     -    0s
+
+Cutting planes:
+  RLT: 2
+  BQP: 1
+
+Explored 7 nodes (62 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat May 17 15:22:20 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file integer_qcp.lp
+Reading time = 0.00 seconds
+: 10 rows, 9 columns, 24 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 10 rows, 9 columns and 24 nonzeros
+Model fingerprint: 0x92a9f746
+Model has 3 quadratic objective terms
+Model has 3 quadratic constraints
+Variable types: 6 continuous, 3 integer (3 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+16]
+  QMatrix range    [1e+01, 1e+01]
+  QLMatrix range   [3e+00, 7e+00]
+  Objective range  [7e+01, 8e+01]
+  QObjective range [5e+01, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 7 rows and 3 columns
+Presolve time: 0.01s
+Presolved: 32 rows, 15 columns, 91 nonzeros
+Presolved model has 8 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 15 continuous, 0 integer (0 binary)
+Found heuristic solution: objective 0.0000000
+
+Root relaxation: cutoff, 9 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0         0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (9 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat May 17 16:45:02 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file integer_qcp.lp
+Reading time = 0.00 seconds
+: 10 rows, 9 columns, 24 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 10 rows, 9 columns and 24 nonzeros
+Model fingerprint: 0x92a9f746
+Model has 3 quadratic objective terms
+Model has 3 quadratic constraints
+Variable types: 6 continuous, 3 integer (3 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+16]
+  QMatrix range    [1e+01, 1e+01]
+  QLMatrix range   [3e+00, 7e+00]
+  Objective range  [7e+01, 8e+01]
+  QObjective range [5e+01, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 7 rows and 3 columns
+Presolve time: 0.00s
+Presolved: 32 rows, 15 columns, 91 nonzeros
+Presolved model has 8 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 15 continuous, 0 integer (0 binary)
+Found heuristic solution: objective 0.0000000
+
+Root relaxation: cutoff, 9 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0         0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (9 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat May 17 16:46:53 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file integer_qcp.lp
+Reading time = 0.00 seconds
+: 10 rows, 9 columns, 24 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 10 rows, 9 columns and 24 nonzeros
+Model fingerprint: 0x92a9f746
+Model has 3 quadratic objective terms
+Model has 3 quadratic constraints
+Variable types: 6 continuous, 3 integer (3 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+16]
+  QMatrix range    [1e+01, 1e+01]
+  QLMatrix range   [3e+00, 7e+00]
+  Objective range  [7e+01, 8e+01]
+  QObjective range [5e+01, 8e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large matrix coefficient range
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 7 rows and 3 columns
+Presolve time: 0.00s
+Presolved: 32 rows, 15 columns, 91 nonzeros
+Presolved model has 8 bilinear constraint(s)
+
+Solving non-convex MIQCP
+
+Variable types: 15 continuous, 0 integer (0 binary)
+Found heuristic solution: objective 0.0000000
+
+Root relaxation: cutoff, 9 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0     cutoff    0         0.00000    0.00000  0.00%     -    0s
+
+Explored 1 nodes (9 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 12:51:59 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 12:52:23 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 12:53:10 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'error_qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 12:53:33 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 12:54:51 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'integer_qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 12:55:18 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file test.lp
+Reading time = 0.00 seconds
+: 2 rows, 3 columns, 5 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0x4d819f46
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  QMatrix range    [1e+00, 3e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e+00, 5e+00]
+  RHS range        [1e+00, 1e+01]
+  QRHS range       [5e+00, 5e+00]
+Presolve removed 2 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 11 available processors)
+
+Solution count 1: 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 12:56:54 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'qcq.lp' for input
+
+
+Gurobi 9.5.2 (mac64[rosetta2], gurobi_cl) logging started Fri May 30 12:58:52 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2026-02-28
+Using license file /Users/jakobzehn/gurobi.lic
+
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[rosetta2])
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'qcq.lp' for input
+
+
+Gurobi 9.5.2 (mac64[rosetta2], gurobi_cl) logging started Fri May 30 12:59:21 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2026-02-28
+Using license file /Users/jakobzehn/gurobi.lic
+
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[rosetta2])
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'error_qcq.lp' for input
+
+
+Gurobi 9.5.2 (mac64[rosetta2], gurobi_cl) logging started Fri May 30 12:59:40 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2026-02-28
+Using license file /Users/jakobzehn/gurobi.lic
+
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[rosetta2])
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+Read LP format model from file test.lp
+Reading time = 0.00 seconds
+: 2 rows, 3 columns, 5 nonzeros
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0x4d819f46
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  QMatrix range    [1e+00, 3e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e+00, 5e+00]
+  RHS range        [1e+00, 1e+01]
+  QRHS range       [5e+00, 5e+00]
+Presolve removed 2 rows and 3 columns
+Presolve time: 0.01s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 11 available processors)
+
+Solution count 1: 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 9.5.2 (mac64[rosetta2], gurobi_cl) logging started Fri May 30 13:00:08 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2026-02-28
+Using license file /Users/jakobzehn/gurobi.lic
+
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[rosetta2])
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+Read LP format model from file test.lp
+Reading time = 0.00 seconds
+: 2 rows, 3 columns, 5 nonzeros
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+Optimize a model with 2 rows, 3 columns and 5 nonzeros
+Model fingerprint: 0x4d819f46
+Model has 1 quadratic constraint
+Variable types: 0 continuous, 3 integer (0 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  QMatrix range    [1e+00, 3e+00]
+  QLMatrix range   [1e+00, 1e+00]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [2e+00, 5e+00]
+  RHS range        [1e+00, 1e+01]
+  QRHS range       [5e+00, 5e+00]
+Presolve removed 2 rows and 3 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 1 (of 11 available processors)
+
+Solution count 1: 5 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 13:02:12 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'new_error_qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 13:05:49 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file new_test.lp
+Reading time = 0.00 seconds
+: 4 rows, 7 columns, 12 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 4 rows, 7 columns and 12 nonzeros
+Model fingerprint: 0xc0163993
+Model has 4 quadratic objective terms
+Model has 5 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e+22, 3e+23]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [1e+00, 6e+00]
+  Objective range  [2e+01, 2e+01]
+  QObjective range [3e+01, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve time: 0.00s
+
+Barrier solved model in 0 iterations and 0.00 seconds (0.00 work units)
+Model is infeasible
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Fri May 30 13:07:04 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file new_test.lp
+Reading time = 0.00 seconds
+: 4 rows, 7 columns, 12 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 4 rows, 7 columns and 12 nonzeros
+Model fingerprint: 0x8a5dc5ce
+Model has 4 quadratic objective terms
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e+22, 3e+23]
+  QMatrix range    [1e+01, 1e+01]
+  QLMatrix range   [1e+00, 6e+00]
+  Objective range  [2e+01, 2e+01]
+  QObjective range [3e+01, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Found heuristic solution: objective 0.0000000
+Presolve removed 4 rows and 7 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 11 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 9.5.2 (mac64[rosetta2], gurobi_cl) logging started Sat Jun  7 14:25:02 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2026-02-28
+Using license file /Users/jakobzehn/gurobi.lic
+
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[rosetta2])
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'Test_positivity_qcq.lp' for input
+
+
+Gurobi 9.5.2 (mac64[rosetta2], gurobi_cl) logging started Sat Jun  7 14:26:14 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2026-02-28
+Using license file /Users/jakobzehn/gurobi.lic
+
+Gurobi Optimizer version 9.5.2 build v9.5.2rc0 (mac64[rosetta2])
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'error_qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun  7 14:27:16 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file new_test.lp
+Reading time = 0.00 seconds
+: 4 rows, 7 columns, 12 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 4 rows, 7 columns and 12 nonzeros
+Model fingerprint: 0x8a5dc5ce
+Model has 4 quadratic objective terms
+Model has 4 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e+22, 3e+23]
+  QMatrix range    [1e+01, 1e+01]
+  QLMatrix range   [1e+00, 6e+00]
+  Objective range  [2e+01, 2e+01]
+  QObjective range [3e+01, 1e+02]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Found heuristic solution: objective 0.0000000
+Presolve removed 4 rows and 7 columns
+Presolve time: 0.00s
+Presolve: All rows and columns removed
+
+Explored 0 nodes (0 simplex iterations) in 0.01 seconds (0.00 work units)
+Thread count was 1 (of 11 available processors)
+
+Solution count 1: 0 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 0.000000000000e+00, best bound 0.000000000000e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun  7 14:27:38 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'Test_positivity_qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun  7 14:27:56 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'Test_positivity_qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun  7 14:30:29 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Warning: unknown variable 'C1' in bounds section (line 12)
+Warning: unknown variable 'C2' in bounds section (line 13)
+Read LP format model from file new_test.lp
+Reading time = 0.00 seconds
+: 3 rows, 6 columns, 9 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 6 columns and 9 nonzeros
+Model fingerprint: 0x3553986b
+Model has 1 quadratic objective term
+Model has 1 quadratic constraint
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  QMatrix range    [1e+00, 1e+00]
+  Objective range  [2e+00, 9e+00]
+  QObjective range [2e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 2 columns
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve removed 0 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 15 rows, 9 columns, 33 nonzeros
+Presolved model has 3 bilinear constraint(s)
+Variable types: 8 continuous, 1 integer (1 binary)
+Found heuristic solution: objective -1.9245009
+
+Root relaxation: objective -1.925926e+00, 6 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -1.92593    0    3   -1.92450   -1.92593  0.07%     -    0s
+     0     0          -    0        -1.92450   -1.92450  0.00%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 1: -1.9245 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.924500894092e+00, best bound -1.924500922088e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun  7 14:39:20 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Warning: unknown variable 'C1' in bounds section (line 12)
+Warning: unknown variable 'C2' in bounds section (line 13)
+Read LP format model from file new_test.lp
+Reading time = 0.00 seconds
+: 3 rows, 6 columns, 9 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 6 columns and 9 nonzeros
+Model fingerprint: 0x3553986b
+Model has 1 quadratic objective term
+Model has 1 quadratic constraint
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  QMatrix range    [1e+00, 1e+00]
+  Objective range  [2e+00, 9e+00]
+  QObjective range [2e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 2 columns
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve removed 0 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 15 rows, 9 columns, 33 nonzeros
+Presolved model has 3 bilinear constraint(s)
+Variable types: 8 continuous, 1 integer (1 binary)
+Found heuristic solution: objective -1.9245009
+
+Root relaxation: objective -1.925926e+00, 6 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -1.92593    0    3   -1.92450   -1.92593  0.07%     -    0s
+     0     0          -    0        -1.92450   -1.92450  0.00%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 1: -1.9245 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.924500894092e+00, best bound -1.924500922088e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun  7 14:39:27 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Warning: unknown variable 'C1' in bounds section (line 12)
+Warning: unknown variable 'C2' in bounds section (line 13)
+Read LP format model from file new_test.lp
+Reading time = 0.00 seconds
+: 3 rows, 6 columns, 9 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 6 columns and 9 nonzeros
+Model fingerprint: 0x3553986b
+Model has 1 quadratic objective term
+Model has 1 quadratic constraint
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  QMatrix range    [1e+00, 1e+00]
+  Objective range  [2e+00, 9e+00]
+  QObjective range [2e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 2 columns
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve removed 0 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 15 rows, 9 columns, 33 nonzeros
+Presolved model has 3 bilinear constraint(s)
+Variable types: 8 continuous, 1 integer (1 binary)
+Found heuristic solution: objective -1.9245009
+
+Root relaxation: objective -1.925926e+00, 6 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -1.92593    0    3   -1.92450   -1.92593  0.07%     -    0s
+     0     0          -    0        -1.92450   -1.92450  0.00%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 1: -1.9245 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.924500894092e+00, best bound -1.924500922088e+00, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun 21 09:38:54 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'qcq.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun 21 09:39:23 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Warning: unknown variable 'C1' in bounds section (line 12)
+Warning: unknown variable 'C2' in bounds section (line 13)
+Read LP format model from file new_test.lp
+Reading time = 0.00 seconds
+: 3 rows, 6 columns, 9 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 6 columns and 9 nonzeros
+Model fingerprint: 0x3553986b
+Model has 1 quadratic objective term
+Model has 1 quadratic constraint
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+00]
+  QMatrix range    [1e+00, 1e+00]
+  Objective range  [2e+00, 9e+00]
+  QObjective range [2e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Presolve removed 0 rows and 2 columns
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve removed 0 rows and 2 columns
+Presolve time: 0.00s
+Presolved: 15 rows, 9 columns, 33 nonzeros
+Presolved model has 3 bilinear constraint(s)
+Variable types: 8 continuous, 1 integer (1 binary)
+Found heuristic solution: objective -1.9245009
+
+Root relaxation: objective -1.925926e+00, 6 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   -1.92593    0    3   -1.92450   -1.92593  0.07%     -    0s
+     0     0          -    0        -1.92450   -1.92450  0.00%     -    0s
+
+Explored 1 nodes (6 simplex iterations) in 0.00 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 1: -1.9245 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.924500894092e+00, best bound -1.924500922088e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun 21 09:39:46 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+
+Error 10003: Unable to open file 'debug_qcq_21_06.lp' for input
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Sat Jun 21 09:42:18 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file new_test.lp
+Reading time = 0.00 seconds
+: 3 rows, 5 columns, 7 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 5 columns and 7 nonzeros
+Model fingerprint: 0x9c5ef8c3
+Model has 3 quadratic constraints
+Coefficient statistics:
+  Matrix range     [3e+14, 1e+16]
+  QMatrix range    [1e+00, 1e+01]
+  QLMatrix range   [2e+00, 8e+00]
+  Objective range  [1e+01, 3e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+Warning: Model contains large matrix coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 26 rows, 11 columns, 64 nonzeros
+Presolved model has 6 bilinear constraint(s)
+Variable types: 11 continuous, 0 integer (0 binary)
+
+Root relaxation: objective 0.000000e+00, 10 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0    2          -    0.00000      -     -    0s
+     0     0    0.23996    0    3          -    0.23996      -     -    0s
+H    0     0                       4.0636265    0.23996  94.1%     -    0s
+H    0     0                       4.0636265    0.23996  94.1%     -    0s
+
+Cutting planes:
+  RLT: 1
+
+Explored 1 nodes (12 simplex iterations) in 0.07 seconds (0.21 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 2: 4.06363 4.06363 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.063626497467e+00, best bound 4.063626373682e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Thu Jun 26 17:57:15 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file debug_qcp_21_06.lp
+Reading time = 0.00 seconds
+: 3 rows, 5 columns, 7 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 5 columns and 7 nonzeros
+Model fingerprint: 0x5b591119
+Model has 3 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e+00, 2e+01]
+  QMatrix range    [1e+00, 9e+00]
+  QLMatrix range   [3e+00, 6e+00]
+  Objective range  [1e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 21 rows, 9 columns, 52 nonzeros
+Presolved model has 5 bilinear constraint(s)
+Variable types: 9 continuous, 0 integer (0 binary)
+Found heuristic solution: objective 4.1676436
+
+Root relaxation: objective 1.886286e-01, 8 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.18863    0    3    4.16764    0.18863  95.5%     -    0s
+     0     0    3.24730    0    5    4.16764    3.24730  22.1%     -    0s
+H    0     0                       4.1676436    3.24730  22.1%     -    0s
+     0     2    3.60269    0    5    4.16764    3.60269  13.6%     -    0s
+
+Explored 3 nodes (24 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 2: 4.16764 4.16764 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.167643588776e+00, best bound 4.167643588776e+00, gap 0.0000%
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Thu Jun 26 18:03:20 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file debug_qcp_21_06.lp
+Reading time = 0.00 seconds
+: 3 rows, 5 columns, 7 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 5 columns and 7 nonzeros
+Model fingerprint: 0x5b591119
+Model has 3 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e+00, 2e+01]
+  QMatrix range    [1e+00, 9e+00]
+  QLMatrix range   [3e+00, 6e+00]
+  Objective range  [1e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 21 rows, 9 columns, 52 nonzeros
+Presolved model has 5 bilinear constraint(s)
+Variable types: 9 continuous, 0 integer (0 binary)
+Found heuristic solution: objective 4.1676436
+
+Root relaxation: objective 1.886286e-01, 8 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.18863    0    3    4.16764    0.18863  95.5%     -    0s
+     0     0    3.24730    0    5    4.16764    3.24730  22.1%     -    0s
+H    0     0                       4.1676436    3.24730  22.1%     -    0s
+     0     2    3.60269    0    5    4.16764    3.60269  13.6%     -    0s
+
+Explored 3 nodes (24 simplex iterations) in 0.02 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 2: 4.16764 4.16764 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.167643588776e+00, best bound 4.167643588776e+00, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
+
+Gurobi 12.0.1 (mac64[arm], gurobi_cl) logging started Thu Jun 26 18:04:51 2025
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Using license file /Users/jakobzehn/gurobi.lic
+Academic license - for non-commercial use only - expires 2026-02-28
+
+Gurobi Optimizer version 12.0.1 build v12.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+Copyright (c) 2025, Gurobi Optimization, LLC
+
+Read LP format model from file debug_qcp_21_06.lp
+Reading time = 0.00 seconds
+: 3 rows, 5 columns, 7 nonzeros
+
+Using Gurobi shared library /Library/gurobi1201/macos_universal2/lib/libgurobi120.dylib
+
+CPU model: Apple M3 Pro
+Thread count: 11 physical cores, 11 logical processors, using up to 11 threads
+
+Optimize a model with 3 rows, 5 columns and 7 nonzeros
+Model fingerprint: 0x5b591119
+Model has 3 quadratic constraints
+Coefficient statistics:
+  Matrix range     [4e+00, 2e+01]
+  QMatrix range    [1e+00, 9e+00]
+  QLMatrix range   [3e+00, 6e+00]
+  Objective range  [1e+01, 2e+01]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [0e+00, 0e+00]
+  QRHS range       [1e+00, 1e+00]
+
+Continuous model is non-convex -- solving as a MIP
+
+Presolve time: 0.00s
+Presolved: 21 rows, 9 columns, 52 nonzeros
+Presolved model has 5 bilinear constraint(s)
+Variable types: 9 continuous, 0 integer (0 binary)
+Found heuristic solution: objective 4.1676436
+
+Root relaxation: objective 1.886286e-01, 8 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.18863    0    3    4.16764    0.18863  95.5%     -    0s
+     0     0    3.24730    0    5    4.16764    3.24730  22.1%     -    0s
+H    0     0                       4.1676436    3.24730  22.1%     -    0s
+     0     2    3.60269    0    5    4.16764    3.60269  13.6%     -    0s
+
+Explored 3 nodes (24 simplex iterations) in 0.03 seconds (0.00 work units)
+Thread count was 11 (of 11 available processors)
+
+Solution count 2: 4.16764 4.16764 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.167643588776e+00, best bound 4.167643588776e+00, gap 0.0000%
+
+Wrote result file 'solution.sol'
+
